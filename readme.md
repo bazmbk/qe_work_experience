@@ -1,8 +1,12 @@
 # SafeSend QE Exercise (Work Experience / Apprentices)
 
 This project contains guidance and starter code for a UK retail bank exercise called **SafeSend**.
-Your goal is to behave like a **Quality Engineer**:
+Your goal is to work in pairs (pair programming) to:
 1) understand the rules and risks, 2) design tests, 3) implement the validator, and 4) run and report on automated tests.
+
+## Pair Programming
+
+This exercise is designed for pair programming. One person acts as the **driver** (writing code) while the other is the **navigator** (reviewing, suggesting, and catching errors). Switch roles regularly to ensure both participants learn.
 
 ## What you are building
 
@@ -23,6 +27,11 @@ You should return:
 - `test_validator.py` — starter automated tests (plain Python `assert`s)
 - `validator_solved.py` — a complete working implementation (reference)
 - `test_validator_solved.py` — a complete working test suite (reference)
+- `validator_flow.md` — visual flowchart explaining the validator logic with code references
+
+## Understanding the Code Logic
+
+For a detailed visual explanation of how the validator works, see `validator_flow.md`. It contains a Mermaid flowchart with code line references and explanatory narrative to help students understand the process flow.
 
 ## Prerequisites
 
