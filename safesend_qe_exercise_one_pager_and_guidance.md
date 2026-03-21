@@ -1,12 +1,28 @@
 # Work Experience / Apprentice QE Exercise (UK Retail Bank)
 ## Scenario: “SafeSend” Payment Validator — Quality Engineering & Testing
 
+## Exercise Timeline (At a Glance)
+
+| Cumulative (mins) | Phase | Duration | Focus |
+|-------------------|-------|----------|-------|
+| ~10 | **Phase 0** — Setup & Orientation | 5–10 mins | Open VS Code, create files, draw mind-map and process flow |
+| ~50 | **Phase 1** — Understand Requirements & Risks | 30–40 mins | Read rules, categorise checks, list assumptions, visualise decision logic |
+| ~85 | **Phase 2** — Test Design | 25–35 mins | Write test plan (happy path, negative, edge/boundary cases), define reason codes |
+| ~145 | **Phase 3** — Implement the Validator | 50–60 mins | Code in small steps: normalise inputs → functional checks → risk gates |
+| ~170 | **Phase 4** — Automated Tests & Test Report | 15–25 mins | Run ≥10 tests, fix failures, write short test report |
+| ~180 | **Phase 5** — Reflection Presentation | 5–10 mins | Create 3-slide reflection on QE skills learned and AI's role |
+| | **Total** | **~3 hrs max** | |
+
+> **Tip**: Don't rush to Phase 3. Strong requirements and test design (Phases 1–2) make implementation much smoother.
+
+---
+
 ## 1) Student One‑Pager: Mission Brief
 
 ### Context
 Our UK retail bank is launching a new in‑app feature called **SafeSend**. Before a customer payment is sent, the app must check it is **valid and safe**. These checks reduce mistakes, fraud risk, and customer harm.
 
-### Our Mission (2–3 hours)
+### Our Mission (up to 3 hours)
 Work like a **Quality Engineer**. We will: (1) understand the rules and risks, (2) define and visualise a solution, and (3) build and prove it with automated tests with help from AI in VS Code.
 
 Critical thinking is the goal. Coding is only part of the job: we must be able to explain *why* each check exists and how our tests prove it.
@@ -41,9 +57,15 @@ By the end we should have:
 - A working **validator** function/script
 - A set of **automated tests** (at least 10 cases) covering good, bad, and edge cases
 - A short **test report**: which tests passed/failed and what we changed
-
+### BDD (Behavior Driven Development) Approach
+This exercise follows **Behavior Driven Development (BDD)** principles to ensure requirements are well-understood before implementation. You'll use **3-Amigos refinement** (now Power of 4 with AI) to define acceptance criteria, then translate them into test cases. While professional teams often use **Gherkin/Cucumber syntax** (Given/When/Then scenarios) for detailed behavior specifications, we'll keep it simple here with visuals and code for time efficiency.
 ### Tools & support
 Use **VS Code** and AI assistance (chat/agent) to help write code, generate test data, and debug. We should still make the decisions: the AI is a helper, not the owner.
+
+**AI Usage Guidance:**
+- **Start with Chat/Ask Mode**: Begin with VS Code's chat interface for quick questions, code suggestions, and iterative development. Use it to brainstorm ideas, explain concepts, and get feedback on your thinking.
+- **Progress to Agent Mode**: As tasks become more complex (like implementing full functions or debugging multiple issues), switch to agent mode for step-by-step assistance and code generation.
+- **Human in the Loop**: Always review, understand, and explain AI suggestions. AI helps with implementation, but you must own the decisions, reasoning, and testing. Ask yourself: "Why does this make sense?" and "How does this align with the requirements?"
 
 Before you ask AI to write code, try to:
 - write your own solution steps in plain English
@@ -69,7 +91,7 @@ Quick visual warm-up (hand-drawn is fine):
 - Draw a *mind-map* of `SafeSend`: inputs -> validation -> risk gates -> outputs and reason codes
 - Draw a *rough process flow* for how a payment moves from “received” to “APPROVE/REJECT/REFER”
 
-### Phase 1 (35–45 mins): Understand Requirements & Risks
+### Phase 1 (30–40 mins): Understand Requirements & Risks
 - Read the scenario and rules. Rewrite the rules in our own words.
 - Separate rules into categories:
   - Functional validity (format/limits)
@@ -133,8 +155,9 @@ mindmap
 
 - Create a simple “Requirements List” table with columns: **ID, Rule, Pass example, Fail example, Outcome (APPROVE/REJECT/REFER)**.
 - Use AI help wisely: ask for examples of edge cases, but choose which ones matter in a bank context.
+- **AI Tip**: In Chat mode, ask "What edge cases should I consider for UK bank sort codes?" to get suggestions, then decide which to include.
 
-### Phase 2 (35–45 mins): Test Design (Test Plan + Test Cases)
+### Phase 2 (25–35 mins): Test Design (Test Plan + Test Cases)
 - Solution design checkpoint (do this before coding):
   - Write the validator function signature (what goes in, what comes out)
   - Define the output schema (e.g., `decision` plus a list of `reasons`)
@@ -168,7 +191,7 @@ mindmap
     - Is there at least one test that proves fail? (Yes/No)
   - Any “No” becomes a specific task before we finish.
 
-### Phase 3 (60–75 mins): Implement the Validator (Small Steps)
+### Phase 3 (50–60 mins): Implement the Validator (Small Steps)
 - Implement the solution in small steps:
   - Implement input normalisation first (e.g., strip hyphens/spaces from sort code)
   - Implement functional validity checks next (REJECT)
@@ -187,7 +210,7 @@ mindmap
   - After each rule is implemented, add/confirm at least one test for it
   - If your tests reveal a mismatch with the scenario, update your assumptions (Phase 1) rather than quietly changing expectations
 
-### Phase 4 (20–30 mins): Automated Tests & Test Report
+### Phase 4 (15–25 mins): Automated Tests & Test Report
 - Use Python `assert`s in a test file.
 - Create at least 10 tests covering: 3 happy path, 4 negative, 3 edge/risk.
 - Run the tests. If any fail, decide: is the code wrong or is the test expectation wrong?
@@ -209,6 +232,23 @@ mindmap
 - “Explain this Python error message in simple terms and suggest a fix.”
 - “Review our validator logic for missing edge cases (UK sort code/account number).”
 - “Suggest reason codes for each rejection to make test assertions stable.”
+
+---
+
+### Phase 5 (5–10 mins): Reflection Presentation
+- Create a short Markdown reflection (3 slides) on QE/testing skills learned, with AI as support.
+- Focus on:
+  - What testing rules and decision logic you implemented (QE thinking)
+  - What edge cases you found and how you handled them
+  - How AI helped speed analysis and test generation, and where you needed human judgment
+- Include:
+  - One slide on “QE & testing skills developed”
+  - One slide on “AI support for QE learning”
+  - One slide on “Reflection: what worked, what was hard, and recommendations”
+- End with a quick checklist of achieved outcomes:
+  - [ ] QE/testing skills identified
+  - [ ] AI support role documented
+  - [ ] Reflections and improvements noted
 
 ### Marking / success checklist (quick)
 - We documented assumptions and rules clearly.

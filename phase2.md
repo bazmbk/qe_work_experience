@@ -1,4 +1,4 @@
-# Phase 2: Test Design (Test Plan + Test Cases) (35-45 mins)
+# Phase 2: Test Design (Test Plan + Test Cases) (25-35 mins)
 
 ## Goal of Phase 2
 By the end of this phase you should have:
@@ -9,11 +9,14 @@ By the end of this phase you should have:
 
 This phase is about **designing proof**. Coding comes later (Phase 3+).
 
+## BDD Connection
+Building on the BDD approach from Phase 1, this phase translates the refined requirements and acceptance criteria into concrete test cases. Each test case represents a specific behavior that must be proven to work correctly.
+
 ## Timebox
 - 0:00-0:10 Solution design checkpoint (define outputs + reason codes)
 - 0:10-0:25 Build the Test Plan and choose test cases
 - 0:25-0:35 Add boundary/format/risk tests + expected outcomes
-- 0:35-0:45 Do traceability / gap analysis and finalise the list of tests
+- 0:25-0:35 Do traceability / gap analysis and finalise the list of tests
 
 ## Step-by-step guidance
 
@@ -93,7 +96,7 @@ Example expectations style (illustrative):
 
 In other words: your expected outcome should be something you can assert in code later.
 
-### 7) Traceability / gap analysis (0:35-0:45)
+### 7) Traceability / gap analysis (0:25-0:35)
 Make a simple checklist that answers, for each starter rule ID:
 - Is there at least one test that proves it can PASS? (Yes/No)
 - Is there at least one test that proves it can FAIL? (Yes/No)

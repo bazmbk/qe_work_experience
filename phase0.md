@@ -27,14 +27,14 @@ This exercise is assessed on **thinking + testing + reasoning**, not typing spee
    - If something is **invalid**, it should become `REJECT` (even if there might also be a risk keyword).
    - Only consider `REFER` after the payment passes basic functional validity checks.
 
-### 2) Setup: create the working files (1:00-4:00)
-1. Create a new folder for the exercise (example name: `safesend_qe_exercise`).
-2. Open that folder in VS Code.
-3. Create these files:
-   - `validator.py`
-   - `test_validator.py`
-4. Decide how you will proceed:
-   - Write the validator and run tests using Python.
+### 2) Setup: open the provided starter files (1:00-4:00)
+1. Open the project folder in VS Code (it should contain the starter files).
+2. Locate these provided files:
+   - `validator.py` (skeleton implementation with constants and function stubs)
+   - `test_validator.py` (starter test suite with basic test structure)
+3. Review the skeleton code to understand the starting point:
+   - `validator.py` has decision constants, reason codes, and a `validate_payment` function that raises `NotImplementedError`
+   - `test_validator.py` has a helper function and basic test cases to get started
 
 Begin with the smallest plan that you can test quickly.
 
@@ -130,8 +130,8 @@ Do not skip this. It prevents “surprises” later when writing tests.
 - [ ] I wrote down assumptions (if any)
 - [ ] I know the next step: designing tests that prove each rule
 
-## AI usage starter prompts (copy/paste)
-- “Help me translate these rules into a clear decision order. What should be checked first and why?”
+## AI usage starter prompts (copy/paste)- "Review this skeleton validator.py code and explain what each constant and function stub is for."
+- "Help me understand the test structure in test_validator.py and suggest what tests to add next."- “Help me translate these rules into a clear decision order. What should be checked first and why?”
 - “Suggest edge cases for amount, sort code, account number, and reference keywords. Keep it UK-focused.”
 - “Propose reason codes that are short and stable for automated tests.”
 - “Review my check order and tell me if any rule priority might cause wrong outcomes.”

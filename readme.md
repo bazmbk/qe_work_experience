@@ -2,7 +2,7 @@
 
 This project contains guidance and starter code for a UK retail bank exercise called **SafeSend**.
 Your goal is to work in pairs (pair programming) to:
-1) understand the rules and risks, 2) design tests, 3) implement the validator, and 4) run and report on automated tests.
+1) understand the rules and risks, 2) design tests, 3) implement the validator, 4) run and report on automated tests, and 5) reflect on QE skills and AI usage.
 
 ## Pair Programming
 
@@ -22,12 +22,13 @@ You should return:
 ## Repository contents
 
 - `safesend_qe_exercise_one_pager_and_guidance.md` — the full scenario and phases
-- `phase0.md` to `phase4.md` — step-by-step guidance per phase
+- `phase0.md` to `phase5.md` — step-by-step guidance per phase
 - `validator.py` — starter implementation of `validate_payment(payment)` (for students to work on)
 - `test_validator.py` — starter automated tests (plain Python `assert`s)
 - `validator_solved.py` — a complete working implementation (reference)
 - `test_validator_solved.py` — a complete working test suite (reference)
 - `validator_flow.md` — visual flowchart explaining the validator logic with code references
+- `test_validator_flow.md` — visual flowchart explaining the test coverage and flow
 
 ## Understanding the Code Logic
 
@@ -73,6 +74,7 @@ flowchart TD
   P1 --> P2[Phase 2: Test design + coverage]
   P2 --> P3[Phase 3: Implement validator in small steps]
   P3 --> P4[Phase 4: Run automated tests + write report]
+  P4 --> P5[Phase 5: Reflect on QE skills + AI usage]
 ```
 
 ## Notes on AI usage
