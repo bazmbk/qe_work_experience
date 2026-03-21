@@ -96,5 +96,5 @@ AI is a helper:
 - it can suggest edge cases, code structure, or debugging steps
 - you must still make the decisions and be able to explain your reasoning
 
-Avoid pasting any real customer data into AI tools.
+Avoid entering any real personal information into AI tools.
 
