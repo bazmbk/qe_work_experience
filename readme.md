@@ -4,6 +4,19 @@ This project contains guidance and starter code for a UK retail bank exercise ca
 Your goal is to work in pairs (pair programming) to:
 1) understand the rules and risks, 2) design tests, 3) implement the validator, 4) run and report on automated tests, and 5) reflect on QE skills and AI usage.
 
+## Project Purpose
+
+This project is designed to teach **quality engineering and testing skills** through a realistic but simplified banking scenario.
+
+The aim is not just to write Python code. The main goal is to help learners:
+- understand requirements and risk rules
+- turn those rules into clear test cases
+- implement a validator with predictable outcomes
+- use automated tests to prove behaviour
+- explain findings, gaps, and decisions clearly
+
+AI is included as a support tool for analysis, coding, and debugging, but the learner is still expected to make the decisions and justify the results.
+
 ## Pair Programming
 
 This exercise is designed for pair programming. One person acts as the **driver** (writing code) while the other is the **navigator** (reviewing, suggesting, and catching errors). Switch roles regularly to ensure both participants learn.
