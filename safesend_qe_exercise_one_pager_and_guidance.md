@@ -56,7 +56,7 @@ By the end we should have:
 - A written **test plan** (what we will test and why)
 - A working **validator** function/script
 - A set of **automated tests** (at least 10 cases) covering good, bad, and edge cases
-- A short **test report**: which tests passed/failed and what we changed
+- A short **Development & Test Findings Report** with an executive summary, test results, and what we changed
 ### BDD (Behavior Driven Development) Approach
 This exercise follows **Behavior Driven Development (BDD)** principles to ensure requirements are well-understood before implementation. You'll use **3-Amigos refinement** (now Power of 4 with AI) to define acceptance criteria, then translate them into test cases. While professional teams often use **Gherkin/Cucumber syntax** (Given/When/Then scenarios) for detailed behavior specifications, we'll keep it simple here with visuals and code for time efficiency.
 ### Tools & support
