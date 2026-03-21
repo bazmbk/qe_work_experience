@@ -1,4 +1,4 @@
-# Phase 1: Understand Requirements & Risks (35-45 mins)
+# Phase 1: Understand Requirements & Risks (30-40 mins)
 
 ## Goal of Phase 1
 By the end of this phase you should be able to:
@@ -10,12 +10,35 @@ By the end of this phase you should be able to:
 - Produce a “Requirements List” that you can use directly for test design in Phase 2
 
 This is about **thinking and risk reasoning**. Don’t jump to coding yet.
+## BDD (Behavior Driven Development) Approach
+This phase uses **Behavior Driven Development (BDD)** techniques to refine requirements and define acceptance criteria. BDD helps ensure everyone (business, development, testing) has a shared understanding of what "done" looks like.
 
+### 3-Amigos Refinement Sessions (Now Power of 4)
+In professional settings, requirements are refined through **3-Amigos sessions** involving:
+- **Business/Product Owner**: Defines business value and acceptance criteria
+- **Developer**: Considers technical feasibility and implementation
+- **Tester/QE**: Identifies edge cases, risks, and testability
+
+With AI assistance, this becomes the **Power of 4**:
+- **AI**: Helps brainstorm edge cases, suggest examples, and validate logic
+- **Business/Product Owner**: Defines business value and acceptance criteria  
+- **Developer**: Considers technical feasibility and implementation
+- **Tester/QE**: Identifies edge cases, risks, and testability
+
+### Gherkin/Cucumber Syntax
+In full BDD practice, behaviors are defined using **Gherkin syntax** with Given/When/Then scenarios:
+```
+Given a payment with amount £0.00
+When the validator processes it
+Then it should REJECT with reason "invalid_amount_low"
+```
+
+For time purposes in this exercise, we'll keep it simple with **visuals (diagrams) and code (tests)** rather than full Gherkin scenarios, but the same thinking applies.
 ## Timebox
 - 0:00-0:10 Read once, understand outcomes
 - 0:10-0:25 Rewrite and classify rules + assumptions
 - 0:25-0:35 Gap analysis + reason codes/outcome decisions
-- 0:35-0:45 Visualise + create your requirements list
+- 0:30-0:40 Visualise + create your requirements list
 
 ## Step-by-step guidance
 
@@ -131,7 +154,7 @@ flowchart LR
   Outcome --> Refer[REFER]
 ```
 
-### 6) Create your “Requirements List” table (0:40-0:45)
+### 6) Create your "Requirements List" table (0:35-0:40)
 Create a small table with one row per rule:
 - `ID`
 - `Rule`
